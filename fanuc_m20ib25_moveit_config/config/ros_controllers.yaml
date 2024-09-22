@@ -1,0 +1,40 @@
+fanuc_m20ib25_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - Revolute1
+    - Revolute2
+    - Revolute3
+    - Revolute4
+    - Revolute5
+    - Revolute6
+  gains:
+    Revolute1:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    Revolute2:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    Revolute3:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    Revolute4:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    Revolute5:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    Revolute6:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1

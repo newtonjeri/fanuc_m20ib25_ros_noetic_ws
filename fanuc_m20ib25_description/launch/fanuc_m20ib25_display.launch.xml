@@ -1,0 +1,18 @@
+<launch>
+  <!-- Load the xacro file and convert it to URDF -->
+  <arg name="xacro_file" default="$(find fanuc_m20ib25_description)/urdf/fanuc_m20ib25.xacro" />
+  
+  
+  <param name="robot_description" command="$(find xacro)/xacro '$(find fanuc_m20ib25_description)/urdf/fanuc_m20ib25.xacro'"/>
+  
+  <!-- Process the xacro file into a URDF and load it into the 'robot_description' parameter -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" output="screen">
+  </node>
+
+
+  <!-- Run the joint_state_publisher GUI if you want to move the joints manually -->
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" output="screen" />
+
+  <!-- Run RViz -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find fanuc_m20ib25_description)/rviz/fanuc_m20ib25.rviz" output="screen" />
+</launch>

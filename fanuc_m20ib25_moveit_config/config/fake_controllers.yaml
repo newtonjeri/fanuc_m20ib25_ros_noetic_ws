@@ -1,0 +1,13 @@
+controller_list:
+  - name: fake_fanuc_m20ib25_controller
+    type: $(arg fake_execution_type)
+    joints:
+      - Revolute1
+      - Revolute2
+      - Revolute3
+      - Revolute4
+      - Revolute5
+      - Revolute6
+initial:  # Define initial robot poses per group
+  - group: fanuc_m20ib25
+    pose: home_pose

@@ -1,0 +1,12 @@
+controller_list:
+  - name: fanuc_m20ib25_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: True
+    joints:
+      - Revolute1
+      - Revolute2
+      - Revolute3
+      - Revolute4
+      - Revolute5
+      - Revolute6

@@ -1,0 +1,7 @@
+FanucM20iB25MoveitJoints robot_joints
+geometry_msgs/Pose pick_pose
+geometry_msgs/Pose place_pose
+geometry_msgs/Vector3 robotArmRotation
+---
+moveit_msgs/RobotTrajectory[] trajectories
+string response_msg

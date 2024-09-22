@@ -1,0 +1,2 @@
+moveit_msgs/RobotTrajectory trajectory
+geometry_msgs/Pose last_valid_target_pose

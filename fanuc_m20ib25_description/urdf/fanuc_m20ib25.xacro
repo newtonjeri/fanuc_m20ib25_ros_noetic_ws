@@ -1,0 +1,196 @@
+<?xml version="1.0" ?>
+<robot name="m-20ib25" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find fanuc_m20ib25_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find fanuc_m20ib25_description)/urdf/fanuc_m20ib25.trans" />
+
+<link name="base_link">
+  <inertial>
+    <origin xyz="-0.021033412026914156 -0.00013954315148778754 0.16346652283271865" rpy="0 0 0"/>
+    <mass value="268.7708455599856"/>
+    <inertia ixx="4.269577" iyy="5.128804" izz="4.817204" ixy="-0.012887" iyz="-0.009775" ixz="-0.054386"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://fanuc_m20ib25_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="steel_satin"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://fanuc_m20ib25_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="M-20iB25_axis1_1">
+  <inertial>
+    <origin xyz="0.02317159028781608 0.0014726207585382283 0.16302597671241853" rpy="0 0 0"/>
+    <mass value="238.85884507700155"/>
+    <inertia ixx="10.566166" iyy="4.8133" izz="9.129152" ixy="-0.017877" iyz="-0.044859" ixz="-0.711286"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.331" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://fanuc_m20ib25_description/meshes/M-20iB25_axis1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="steel_satin"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.331" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://fanuc_m20ib25_description/meshes/M-20iB25_axis1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="M-20iB25_axis2_1">
+  <inertial>
+    <origin xyz="-0.007254639239173771 -0.18626448663053624 0.34591831328624456" rpy="0 0 0"/>
+    <mass value="421.9835327470499"/>
+    <inertia ixx="50.350824" iyy="46.069591" izz="6.979563" ixy="-0.011178" iyz="-0.141305" ixz="0.087846"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.075 -0.186 -0.648" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://fanuc_m20ib25_description/meshes/M-20iB25_axis2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="steel_satin"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.075 -0.186 -0.648" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://fanuc_m20ib25_description/meshes/M-20iB25_axis2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="M-20iB25_axis3_1">
+  <inertial>
+    <origin xyz="0.017326356586805217 -0.12851036249327233 0.04675747814964226" rpy="0 0 0"/>
+    <mass value="146.06269082541283"/>
+    <inertia ixx="1.65687" iyy="1.824285" izz="1.666802" ixy="-0.030697" iyz="-0.022779" ixz="-0.173811"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.075 -0.1245 -1.553" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://fanuc_m20ib25_description/meshes/M-20iB25_axis3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="steel_satin"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.075 -0.1245 -1.553" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://fanuc_m20ib25_description/meshes/M-20iB25_axis3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="M-20iB25_axis4_1">
+  <inertial>
+    <origin xyz="0.30847001379252836 0.0043060092983377455 4.992924278424127e-05" rpy="0 0 0"/>
+    <mass value="105.86792116418299"/>
+    <inertia ixx="0.408832" iyy="3.871035" izz="4.019005" ixy="-0.007042" iyz="3.3e-05" ixz="-0.000133"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.262 0.001 -1.673" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://fanuc_m20ib25_description/meshes/M-20iB25_axis4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="steel_satin"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.262 0.001 -1.673" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://fanuc_m20ib25_description/meshes/M-20iB25_axis4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="M-20iB25_axis5_1">
+  <inertial>
+    <origin xyz="0.013068716397272029 -0.05231823515858759 7.023186213483967e-06" rpy="0 0 0"/>
+    <mass value="9.85202292153833"/>
+    <inertia ixx="0.015228" iyy="0.022201" izz="0.021862" ixy="0.000265" iyz="-0.0" ixz="-1e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.968 -0.0465 -1.673" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://fanuc_m20ib25_description/meshes/M-20iB25_axis5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="steel_satin"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.968 -0.0465 -1.673" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://fanuc_m20ib25_description/meshes/M-20iB25_axis5_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="M-20iB25_axis6_1">
+  <inertial>
+    <origin xyz="0.004962281675478186 6.269984531570572e-14 -8.737054003082889e-05" rpy="0 0 0"/>
+    <mass value="0.18058823667093432"/>
+    <inertia ixx="7.7e-05" iyy="4e-05" izz="4.1e-05" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-1.0562 0.0082 -1.673" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://fanuc_m20ib25_description/meshes/M-20iB25_axis6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="steel_satin"/>
+  </visual>
+  <collision>
+    <origin xyz="-1.0562 0.0082 -1.673" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://fanuc_m20ib25_description/meshes/M-20iB25_axis6_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Revolute1" type="continuous">
+  <origin xyz="0.0 0.0 0.331" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="M-20iB25_axis1_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="Revolute2" type="continuous">
+  <origin xyz="0.075 0.186 0.317" rpy="0 0 0"/>
+  <parent link="M-20iB25_axis1_1"/>
+  <child link="M-20iB25_axis2_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Revolute3" type="continuous">
+  <origin xyz="0.0 -0.0615 0.905" rpy="0 0 0"/>
+  <parent link="M-20iB25_axis2_1"/>
+  <child link="M-20iB25_axis3_1"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Revolute4" type="continuous">
+  <origin xyz="0.187 -0.1255 0.12" rpy="0 0 0"/>
+  <parent link="M-20iB25_axis3_1"/>
+  <child link="M-20iB25_axis4_1"/>
+  <axis xyz="1.0 -0.0 0.0"/>
+</joint>
+
+<joint name="Revolute5" type="continuous">
+  <origin xyz="0.706 0.0475 0.0" rpy="0 0 0"/>
+  <parent link="M-20iB25_axis4_1"/>
+  <child link="M-20iB25_axis5_1"/>
+  <axis xyz="-0.0 -1.0 -0.0"/>
+</joint>
+
+<joint name="Revolute6" type="continuous">
+  <origin xyz="0.0882 -0.0547 0.0" rpy="0 0 0"/>
+  <parent link="M-20iB25_axis5_1"/>
+  <child link="M-20iB25_axis6_1"/>
+  <axis xyz="1.0 -0.0 0.0"/>
+</joint>
+
+</robot>

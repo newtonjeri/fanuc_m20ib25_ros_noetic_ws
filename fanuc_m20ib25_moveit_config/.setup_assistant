@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: fanuc_m20ib25_description
+    relative_path: urdf/fanuc_m20ib25.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/m-20ib25.srdf
+  CONFIG:
+    author_name: Newton Kariuki
+    author_email: newtonkaris45@gmail.com
+    generated_timestamp: 1727017317

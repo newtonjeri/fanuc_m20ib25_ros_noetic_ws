@@ -1,0 +1,3 @@
+geometry_msgs/Pose target_pose
+FanucM20iB25MoveitJoints robot_joints
+geometry_msgs/Vector3 robotArmRotation

@@ -1,0 +1,6 @@
+FanucM20iB25MoveitJoints initial_robot_joints
+FanucM20iB25MoveitJoints[] robot_joints_per_sequence
+geometry_msgs/Pose[] target_poses
+geometry_msgs/Vector3 robotArmRotation
+---
+moveit_msgs/RobotTrajectory[] trajectories
